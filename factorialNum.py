@@ -9,4 +9,3 @@ def factorial(number):
     return result
 # --- Ejecución ---
 number = int(input("Ingrese un número para calcular su factorial: "))
-print(f"El factorial de {number} es {factorial(number)}")

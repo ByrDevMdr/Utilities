@@ -19,4 +19,3 @@ num = int(input("Ingrese un número n: "))
 resultado = countPr(num)
 
 print(f"\nMétodo 1 (Fuerza Bruta):")
-print(f"Hay {resultado} números 'k' (entre 1 y {num}) que cumplen MCD(k, {num}) = 1.")

@@ -30,4 +30,3 @@ A = [2, 3, 4, 10, 15]
 B = [1, 5, 8, 12, 14, 18]
 
 k = int(input("Ingrese el valor de k para encontrar el k-ésimo elemento: "))
-print(f"El {k}-ésimo elemento es:", encontrarTermino(A, B, k))

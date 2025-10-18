@@ -64,4 +64,3 @@ elif opcion == 2:
 # k_2 = 1
 # print(f"\nArray Original: {array2}")
 # rotarArray(array2, k_2)
-# print(f"Array Rotado {k_2} vez: {array2}")

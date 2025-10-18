@@ -18,3 +18,4 @@ print(f"La suma de los factores propios de {num} es: {resultado}")
 #         if number % i == 0:
 #             suma += i
 #     return suma
+

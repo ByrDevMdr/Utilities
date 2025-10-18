@@ -1,3 +1,4 @@
+
 def balanceParent(cadena):
     """
     Verifica si una cadena de paréntesis (), [], {} está balanceada
@@ -50,4 +51,3 @@ print(f"'{s1}': {balanceParent(s1)}") # Válido
 print(f"'{s2}': {balanceParent(s2)}") # Inválido
 print(f"'{s3}': {balanceParent(s3)}") # Inválido
 print(f"'{s4}': {balanceParent(s4)}") # Inválido
-print(f"'{s5}': {balanceParent(s5)}") # Válido

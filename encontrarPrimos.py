@@ -25,4 +25,3 @@ limite_superior = 1000
 pares_gemelos = findNum(limite_superior)
 print(f"--- Pares de primos gemelos menores que {limite_superior} ---")
 print(pares_gemelos)
-print(f"\nTotal de pares encontrados: {len(pares_gemelos)}")
