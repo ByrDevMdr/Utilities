@@ -10,22 +10,19 @@ def findNum(limite):
             for i in range(p * p, limite, p):
                 primo[i] = False
     # 3. Recolectar todos los números primos encontrados
-    primos = []
+    primos = [] # Se inicializa la lista de primos
     for p in range(limite):
         if primo[p]:
             primos.append(p)
     # 4. Encontrar los pares gemelos
-    gemelos = []
+    gemelos = [] # Se inicializa la lista de pares gemelos
     # Recorremos la lista de primos y comparamos cada uno con el siguiente
     for i in range(len(primos) - 1):
         if primos[i+1] - primos[i] == 2:
             gemelos.append((primos[i], primos[i+1]))
-            
     return gemelos
-
 limite_superior = 1000
 pares_gemelos = findNum(limite_superior)
-
 print(f"--- Pares de primos gemelos menores que {limite_superior} ---")
 print(pares_gemelos)
 print(f"\nTotal de pares encontrados: {len(pares_gemelos)}")
