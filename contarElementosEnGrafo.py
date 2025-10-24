@@ -1,9 +1,4 @@
 def contar_componentes_conexas(n, aristas):
-    """
-    Cuenta el número de componentes conexas en un grafo no dirigido.
-    :param n: Número total de nodos (etiquetados de 0 a n-1)
-    :param aristas: Una lista de tuplas, ej: [(0, 1), (1, 2), (3, 4)]
-    """
     # 1. Construir el grafo (lista de adyacencia)
     grafo = {i: [] for i in range(n)}
     for u, v in aristas:
@@ -24,12 +19,11 @@ def contar_componentes_conexas(n, aristas):
                 dfs(vecino)
     # 4. Bucle principal: recorre todos los nodos
     for nodo in range(n):
-        # 5. Si encontramos un nodo de una isla nueva...
+        # 5. Si encontramos un nodo de una isla 
         if nodo not in visitados:
-            contador += 1  # Incrementamos el contador
-            dfs(nodo)      # recorremos toda la isla
+            contador += 1  
+            dfs(nodo)     
     return contador
-
 # --- Ejecución ---
 # Nodos: 0, 1, 2, 3, 4, 5
 n_nodos = 6
